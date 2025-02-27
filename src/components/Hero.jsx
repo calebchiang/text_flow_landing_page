@@ -1,16 +1,19 @@
+import { Button } from "./ui/button";
+
 const Hero = () => {
   return (
-    <section className="relative w-full bg-orange-100 flex flex-col items-center justify-center text-center py-28 px-6">
+    <section id="hero" className="relative w-full bg-gradient-to-b from-orange-100 to-orange-200 flex flex-col items-center justify-center text-center py-28 px-6">
       <h1 className="text-5xl font-bold text-orange-700">Boost Your Revenue</h1>
       <p className="mt-10 text-lg text-orange-800 max-w-xl">
-      Designed for Shopify merchants, TextFlow makes SMS automation effortless.      </p>
+        Designed for Shopify merchants, TextFlow makes SMS automation effortless.
+      </p>
       <div className="mt-10 flex space-x-4 relative z-10 mb-20">
-        <button className="px-6 py-3 text-white bg-orange-600 rounded-lg shadow-md hover:bg-orange-500 transition">
+        <Button className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-3">
           Get Started
-        </button>
-        <button className="px-6 py-3 text-orange-600 border border-orange-600 rounded-lg shadow-md hover:bg-orange-200 transition">
+        </Button>
+        <Button variant="outline" className="border-orange-600 text-orange-600 px-6 py-3">
           Watch Video
-        </button>
+        </Button>
       </div>
       <div className="absolute w-full flex justify-center bottom-[-200px] z-20">
         <img src="/sms_automation.png" alt="App Mockup" className="w-1/2 max-w-lg drop-shadow-lg rounded-md" />
