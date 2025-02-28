@@ -1,27 +1,71 @@
 import { Button } from "./ui/button";
+import { Input } from "@/components/ui/input";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import Tag from "./Tag";
+import { ChevronRight } from "lucide-react";
 
 const Hero = () => {
+  const handleSubscribe = () => {
+    window.open("https://forms.gle/2AyarnPyebecz8NQA", "_blank");
+    };
+
   return (
-    <section id="hero" className="relative w-full bg-gradient-to-b from-orange-100 to-orange-200 flex flex-col items-center justify-center text-center py-28 px-6">
-      <h1 className="text-5xl font-bold text-orange-700">Boost Your Revenue</h1>
-      <p className="mt-10 text-lg text-orange-800 max-w-xl">
+    <section id="hero" className="relative w-full bg-gradient-to-b from-orange-100 to-orange-200 flex flex-col items-center justify-center text-center py-10 px-6">
+      <Tag>
+        <div className="flex items-center cursor-pointer">
+          <span>TextFlow v0.1</span>
+          <ChevronRight className="w-6 h-6 ml-1 text-indigo-300 overflow-visible" />
+        </div>
+      </Tag>
+      <h1 className="mb-6 text-6xl font-extrabold text-orange-700">Engage Every Lead</h1>
+      <h2 className="text-4xl font-extrabold"><span className="bg-gradient-to-r from-pink-500 via-indigo-600 to-pink-500 bg-clip-text text-transparent">Completely Automated</span></h2>
+      <p className="mt-8 text-lg text-orange-800 max-w-xl">
         Designed for Shopify merchants, TextFlow makes SMS automation effortless.
       </p>
-      <div className="mt-10 flex space-x-4 relative z-10 mb-20">
-        <Button className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-3">
-          Get Started
-        </Button>
-        <Button variant="outline" className="border-orange-600 text-orange-600 px-6 py-3">
-          Watch Video
-        </Button>
+      <div className="mt-8 mb-4 w-full max-w-md relative">
+        <div className="flex items-center rounded-lg bg-gray-100 shadow-sm">
+          <Input
+            type="email"
+            placeholder="name@email.com"
+            className="flex-1 px-4 py-3 border-none outline-none"
+          />
+          <Button onClick={handleSubscribe} className="bg-orange-400 hover:bg-orange-300 text-white px-6 py-3 rounded-sm">
+            Join waitlist
+          </Button>
+        </div>
+        </div>
+      <div className="flex items-center space-x-3 mb-20">
+        <div className="flex -space-x-2">
+          <Avatar>
+            <AvatarImage className="w-full h-full object-cover" src="/avatar1.jpg" />
+            <AvatarFallback>JD</AvatarFallback>
+          </Avatar>
+          <Avatar>
+            <AvatarImage className="w-full h-full object-cover" src="/avatar2.jpeg" />
+            <AvatarFallback>AE</AvatarFallback>
+          </Avatar>
+          <Avatar>
+            <AvatarImage className="w-full h-full object-cover" src="/avatar3.jpg" />
+            <AvatarFallback>LC</AvatarFallback>
+          </Avatar>
+          <Avatar>
+            <AvatarImage className="w-full h-full object-cover" src="/avatar4.jpg" />
+            <AvatarFallback>MK</AvatarFallback>
+          </Avatar>
+          <Avatar>
+            <AvatarImage className="w-full h-full object-cover" src="/avatar5.jpg" />
+            <AvatarFallback>TS</AvatarFallback>
+          </Avatar>
+        </div>
+        <p className="text-gray-700 text-sm">Join 1000+ others on the waitlist</p>
       </div>
-      <div className="absolute w-full flex justify-center bottom-[-200px] z-20">
+      <div className="absolute w-full flex justify-center bottom-[-100px] md:bottom-[-200px] z-20">
         <img src="/sms_automation.png" alt="App Mockup" className="w-1/2 max-w-lg drop-shadow-lg rounded-md" />
       </div>
 
       <div className="absolute bottom-[-40px] left-0 w-full overflow-hidden leading-none">
         <svg
-          className="w-full h-48"
+          className="w-full h-[150px] md:h-48"
           viewBox="0 0 1440 320"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"

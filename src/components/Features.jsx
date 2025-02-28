@@ -4,10 +4,10 @@ import { Button } from "./ui/button";
 
 const Features = () => {
   return (
-    <section id="features" className="w-full bg-white text-center py-24 px-6 mt-50">
+    <section id="features" className="w-full bg-white text-center py-6 px-6">
       <h2 className="text-2xl font-bold italic text-orange-700">Powerful & Simple SMS Automation</h2>
       <p className="mt-4 text-md text-gray-700 max-w-2xl mx-auto">
-        Effortlessly engage Shopify customers, recover lost sales, and boost conversions with automated text messaging.
+        Effortlessly design high converting SMS automation campaigns with <span className="font-bold">zero technical experience needed.</span>
       </p>
 
       {/* Features Grid */}
@@ -33,13 +33,6 @@ const Features = () => {
             <CardContent className="text-gray-600 text-sm text-center">{desc}</CardContent>
           </Card>
         ))}
-      </div>
-
-      {/* CTA */}
-      <div className="mt-20">
-        <Button className="bg-orange-600 hover:bg-orange-500 px-8 py-3 text-lg">
-          Join Waitlist
-        </Button>
       </div>
     </section>
   );
