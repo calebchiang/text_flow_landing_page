@@ -12,13 +12,13 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
           <a href="#features" className="text-orange-700 text-lg hover:text-orange-600 transition">
             Features
           </a>
-          <a href="#testimonials" className="text-orange-700 text-lg hover:text-orange-600 transition">
+          {/* <a href="#testimonials" className="text-orange-700 text-lg hover:text-orange-600 transition">
             Testimonials
-          </a>
+          </a> */}
           <a href="#pricing" className="text-orange-700 text-lg hover:text-orange-600 transition">
             Pricing
           </a>
-          <a className="px-6 py-2 text-white bg-orange-400 rounded-lg shadow hover:bg-orange-300 transition text-center">
+          <a className="px-6 py-2 text-white bg-orange-400 rounded-lg shadow hover:bg-orange-300 transition text-center" href="#cta">
             Get Started
           </a>
         </div>
