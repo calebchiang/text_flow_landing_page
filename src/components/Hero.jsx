@@ -17,12 +17,12 @@ const Hero = () => {
           <ChevronRight className="w-6 h-6 ml-1 text-indigo-300 overflow-visible" />
         </div>
       </Tag>
-      <h1 className="mb-6 text-6xl font-extrabold text-orange-700">Engage Every Lead</h1>
+      <h1 className="mb-8 text-6xl font-extrabold text-orange-700">Engage Every Lead</h1>
       <h2 className="text-4xl font-extrabold"><span className="bg-gradient-to-r from-pink-500 via-indigo-600 to-pink-500 bg-clip-text text-transparent">Completely Automated</span></h2>
-      <p className="mt-8 text-lg text-orange-800 max-w-xl">
+      <p className="mt-10 text-lg text-orange-800 max-w-xl">
         Designed for Shopify merchants, TextFlow makes SMS automation effortless.
       </p>
-      <div className="mt-8 mb-4 w-full max-w-md relative">
+      <div className="mt-10 mb-4 w-full max-w-md relative">
         <div className="flex items-center rounded-lg bg-gray-100 shadow-sm">
           <Input
             type="email"
@@ -34,7 +34,7 @@ const Hero = () => {
           </Button>
         </div>
         </div>
-      <div className="flex items-center space-x-3 mb-20">
+      <div className="flex items-center space-x-3 mb-30">
         <div className="flex -space-x-2">
           <Avatar>
             <AvatarImage className="w-full h-full object-cover" src="/avatar1.jpg" />
