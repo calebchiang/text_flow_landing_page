@@ -17,8 +17,8 @@ const Hero = () => {
           <ChevronRight className="w-6 h-6 ml-1 text-indigo-300 overflow-visible" />
         </div>
       </Tag>
-      <h1 className="mb-8 text-6xl font-extrabold text-orange-700">Engage Every Lead</h1>
-      <h2 className="text-4xl font-extrabold"><span className="bg-gradient-to-r from-pink-500 via-indigo-600 to-pink-500 bg-clip-text text-transparent">Completely Automated</span></h2>
+      <h1 className="mt-8 mb-8 text-7xl font-extrabold text-orange-700">Engage Every Lead</h1>
+      <h2 className="text-5xl font-extrabold"><span className="bg-gradient-to-r from-pink-500 via-indigo-600 to-pink-500 bg-clip-text text-transparent">Completely Automated</span></h2>
       <p className="mt-10 text-lg text-orange-800 max-w-xl">
         Designed for Shopify merchants, TextFlow makes SMS automation effortless.
       </p>
@@ -59,8 +59,8 @@ const Hero = () => {
         </div>
         <p className="text-gray-700 text-sm">Join 1000+ others on the waitlist</p>
       </div>
-      <div className="absolute w-full flex justify-center bottom-[-100px] md:bottom-[-200px] z-20">
-        <img src="/sms_automation.png" alt="App Mockup" className="w-1/2 max-w-lg drop-shadow-lg rounded-md" />
+      <div className="absolute w-full flex justify-center bottom-[-100px] md:bottom-[-280px] z-20">
+        <img src="/sms_automation.png" alt="App Mockup" className="w-3/4 max-w-2xl drop-shadow-xl rounded-md opacity-95" />
       </div>
 
       <div className="absolute bottom-[-40px] left-0 w-full overflow-hidden leading-none">
