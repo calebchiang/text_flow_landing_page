@@ -1,24 +1,17 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
-import AboutUs from "./components/AboutUs";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import HelpPage from "./pages/HelpPage";
+import OnboardingPage from "./pages/OnboardingPage";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <AboutUs />
-      <Features />
-      {/* <Testimonials /> */}
-      <Pricing />
-      <CTA />
-      <Footer /> 
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/help" element={<HelpPage />} />
+        <Route path="/help/onboarding" element={<OnboardingPage />} />
+      </Routes>
+    </Router>
   );
 }
 
