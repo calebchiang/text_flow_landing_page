@@ -58,6 +58,13 @@ const Navbar = () => {
               >
                 Pricing
               </NavigationMenuLink>
+            </NavigationMenuItem><NavigationMenuItem>
+              <NavigationMenuLink
+                href="/help"
+                className="text-orange-700 hover:text-orange-600 transition font-medium"
+              >
+                Support
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

@@ -9,7 +9,15 @@ export default function OnboardingPage() {
 
     const sections = [
         { id: "before-you-start", title: "Before You Start" },
-        { id: "getting-started", title: "Getting Started"},
+        { 
+          id: "getting-started", 
+          title: "Getting Started",
+          subsections: [
+            { id: "sync-customer-data", title: "1. Sync Customer Data" },
+            { id: "create-first-automation", title: "2. Create Your First Automation" },
+            { id: "review-analytics", title: "3.Review Analytics" },
+          ],
+        },
       ];
     
       return (
@@ -28,7 +36,9 @@ export default function OnboardingPage() {
           {/* Add other sections here */}
         </div>
         {/* Sidebar */}
+        <div className="hidden md:block">
         <HelpPageSidebar sections={sections} />
+        </div>
       </div>
         <Footer />
         </div>

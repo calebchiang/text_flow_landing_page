@@ -1,7 +1,7 @@
 export default function BeforeYouStart() {
     return (
       <div className="w-full py-10 px-6 flex flex-col items-start text-left max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-900">Before You Start</h2>
+        <h2 className="text-3xl font-bold text-gray-900">Before You Start</h2>
         <p className="text-lg text-gray-500 mt-2">
         General information about TextFlow
         </p>
