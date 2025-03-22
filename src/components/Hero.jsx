@@ -60,7 +60,7 @@ const Hero = () => {
         <p className="text-gray-700 text-sm">Join 1000+ others on the waitlist</p>
       </div>
       <div className="absolute w-full flex justify-center bottom-[-100px] md:bottom-[-280px] z-20">
-        <img src="/sms_automation.png" alt="App Mockup" className="w-3/4 max-w-2xl drop-shadow-xl rounded-md opacity-95" />
+        <img src="/automation.webp" alt="App Mockup" className="w-3/4 max-w-2xl drop-shadow-xl rounded-md opacity-95" />
       </div>
 
       <div className="absolute bottom-[-40px] left-0 w-full overflow-hidden leading-none">
